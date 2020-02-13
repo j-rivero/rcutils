@@ -21,6 +21,8 @@ jobs:
           package-name: rcutils
           colcon-mixin-name: coverage-gcc
           colcon-mixin-repository: https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml
+      - name: find report
+        run: find . -name *.html
       - uses: codecov/codecov-action@master
         # Prevent being rate limited by only reporting coverage from the Ubuntu
         # build.
@@ -34,5 +36,5 @@ jobs:
           fail_ci_if_error: false
       - uses: actions/upload-artifact@master
         with:
-          name: colcon-logs-${{ matrix.os }}
-          path: ros_ws/log
+          name: report
+          path: ros_ws/*.html
