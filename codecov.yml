@@ -1,7 +1,10 @@
-fixes:
-  - "ros_ws/src/rcutils/::"
-
 parsers:
   gcov:
     branch_detection:
-      conditional: false
+      conditional: no
+      loop: no
+      method: no
+      macro: no
+
+fixes:
+  - "ros_ws/src/rcutils/::"
