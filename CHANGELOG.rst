@@ -2,6 +2,7 @@
 Changelog for package rcutils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+
 0.8.4 (2019-11-18)
 ------------------
 * fix type of logging feature keys (`#192 <https://github.com/ros2/rcutils/issues/192>`_)
