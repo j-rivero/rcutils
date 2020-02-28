@@ -28,6 +28,9 @@ else()
   set(time_impl_c src/time_unix.c)
 endif()
 
+message(WARNING "Testing warning")
+message(AUTHOR_WARNING "Author warning test")
+
 set(rcutils_sources
   src/allocator.c
   src/array_list.c
